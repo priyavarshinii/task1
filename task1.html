@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            width: 100%;
+            height: 100vh;
+            background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+                       url('./images/octa2.jpg');
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .logo{
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+        .menue a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .menue a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+
+        }
+        .menue a:hover:before{
+            width:90%;
+        }
+        .register a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        .h-text{
+            max-width: 650px;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align:left;
+            color: white;
+
+        }
+        .h-text a{
+            text-decoration: none;
+            background-color:deepskyblue;
+            color:black;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition:0.4s;
+        }
+        .h-text a:hover{
+            background: transparent;
+            border: 1px solid deepskyblue;
+
+        }
+        .h-text span{
+            letter-spacing: 5px;
+        }
+        .h-text h1{
+            font-size: 3.5em;
+            letter-spacing: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">mail us:octanet@gmail.com</div> 
+        <div class="menue">
+            <a href="#">Services</a>
+            <a href="#">Internship</a>
+            <a href="#">About</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="register">
+            <a href="#">Register</a>
+        </div>
+    </nav>
+    <section class="h-text">
+        <span>Your Deam!Your Destiny!</span>
+        <h1>OCTANET</h1><br>
+        <a href="#">Our Services</a>
+    </section>
+
+</header>
+</body>
+
+</html>
